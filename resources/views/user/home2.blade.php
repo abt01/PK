@@ -41,7 +41,7 @@
     <link href="{{asset('user/css/footer2.css')}}" rel="stylesheet">
     <link href="{{asset('user/css/header2.css')}}" rel="stylesheet">
     <link id="color_scheme" href="{{asset('user/css/home2.css')}}" rel="stylesheet">
-    <!-- <link href="css/responsive.css" rel="stylesheet"> -->
+    <!-- <link href="css/responsive.css')}}'" rel="stylesheet"> -->
 
 
 
@@ -60,7 +60,7 @@
                         <div class="header-top-left form-inline col-sm-6 col-xs-6 compact-hidden">
 
                             <div class="form-group languages-block ">
-                                <form action="{{asset('user/index.html')}}" method="post" enctype="multipart/form-data" id="bt-language">
+                                <form action="index.html" method="post" enctype="multipart/form-data" id="bt-language">
                                     <a class="btn btn-xs dropdown-toggle" data-toggle="dropdown">
                                     </a>
 
@@ -70,9 +70,9 @@
                         <div class="header-top-right collapsed-block text-right  col-sm-6 col-xs-6 compact-hidden">
                             <div class="tabBlock" id="TabBlock-1">
                                 <ul class="top-link list-inline">
-                                    <li class="wishlist hidden-xs"><a href="{{asset('user/wishlist.html')}}" id="wishlist-total" class="top-link-wishlist" title="Welcome Customer!"><span>Welcome Customer!</span></a></li>
-                                    <li class="login"><a href="{{asset('RAW/login.html')}}" class="top-link-checkout" title="Sign In"><span>Sign In</span></a></li>
-                                    <li class="register"><a href="{{asset('RAW/register.html')}}" title="Register"><span>Register</span></a></li>
+                                    <li class="wishlist hidden-xs"><a href="{{route('wishlist')}}" id="wishlist-total" class="top-link-wishlist" title="Welcome Customer!"><span>Welcome Customer!</span></a></li>
+                                    <li class="login"><a href="{{route('login')}}" class="top-link-checkout" title="Sign In"><span>Sign In</span></a></li>
+                                    <li class="register"><a href="{{route('register')}}" title="Register"><span>Register</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -87,13 +87,13 @@
                     <div class="row">
                         <!-- Logo -->
                         <div class="navbar-logo col-md-3 col-sm-12 col-xs-7">
-                            <a href="{{asset('user/index.html')}}"><img src="{{asset('user/img/demo/logo/logo51.png')}}" title="Peezar Khana" alt="Peezar Khana"></a>
+                            <a href="{{route('/')}}"><img src="{{asset('user/img/demo/logo/logo51.png')}}" title="Peezar Khana" alt="Peezar Khana"></a>
                         </div>
                         <!-- //end Logo -->
 
                         <!-- Search -->
                         <div id="sosearchpro" class=" col-xs-12 col-sm-8 col-md-5 search-pro">
-                            <form method="GET" action="{{asset('user/index.html')}}">
+                            <form method="GET" action="index.html">
                                 <div id="search0" class="search input-group">
 
 
@@ -131,13 +131,13 @@
                                             <tbody>
                                             <tr>
                                                 <td class="text-center" style="width:70px">
-                                                    <a href="{{asset('user/product.html')}}"> <img src="{{asset('user/img/demo/cms/image2.jpg')}}" style="width:70px" alt="Kohati SMile" title="Kohati Smile" class="preview"> </a>  -->
+                                                    <a href="{{route('product')}}"> <img src="{{asset('user/img/demo/cms/image2.jpg')}}" style="width:70px" alt="Kohati SMile" title="Kohati Smile" class="preview"> </a>  -->
                                                 </td>
-                                                <td class="text-left"> <a class="cart_product_name" href="{{asset('user/product.html')}}">Kohati Smile</a> </td>
+                                                <td class="text-left"> <a class="cart_product_name" href="{{route('product')}}">Kohati Smile</a> </td>
                                                 <td class="text-center"> x1 </td>
                                                 <td class="text-center"> RS 2500.00 </td>
                                                 <td class="text-right">
-                                                    <a href="{{asset('user/product.html')}}" class="fa fa-edit"></a>
+                                                    <a href="{{route('product')}}" class="fa fa-edit"></a>
                                                 </td>
                                                 <td class="text-right">
                                                     <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
@@ -145,13 +145,13 @@
                                             </tr>
                                             <tr>
                                                 <td class="text-center" style="width:70px">
-                                                    <a href="{{asset('user/product.html')}}"> <img src="{{asset('user/img/demo/cms/i11.jpg')}}" style="width:70px" alt="Kheri" title="Brown Kheri" class="preview"> </a>
+                                                    <a href="{{route('product')}}"> <img src="{{asset('user/img/demo/cms/i11.jpg')}}" style="width:70px" alt="Kheri" title="Brown Kheri" class="preview"> </a>
                                                 </td>
-                                                <td class="text-left"> <a class="cart_product_name" href="{{asset('user/product.html')}}">Brown Kheri</a> </td>
+                                                <td class="text-left"> <a class="cart_product_name" href="{{route('product')}}">Brown Kheri</a> </td>
                                                 <td class="text-center"> x1 </td>
                                                 <td class="text-center"> RS 3000.00 </td>
                                                 <td class="text-right">
-                                                    <a href="{{asset('user/product.html')}}" class="fa fa-edit"></a>
+                                                    <a href="{{route('product')}}" class="fa fa-edit"></a>
                                                 </td>
                                                 <td class="text-right">
                                                     <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
@@ -172,11 +172,12 @@
 
                                                 </tbody>
                                             </table>
-                                            <p class="text-right"> <a class="btn view-cart" href="{{asset('user/cart.html')}}"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i>Checkout</a> </p>
+                                            <p class="text-right"> <a class="btn view-cart" href="{{route('cart')}}"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="{{route('checkout')}}"><i class="fa fa-share"></i>Checkout</a> </p>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
 
@@ -307,15 +308,16 @@
                                                         <li class="home hover">
 
                                                             <p class="close-menu"></p>
-                                                            <a href="{{asset('user/home2.html')}}" class="clearfix menu1">
+                                                            <a href="home2.html" class="clearfix menu1">
                                                                 <strong>Home</strong>
                                                                 <span class="label"></span>
                                                             </a>
                                                         </li>
 
+
                                                         <li class="with-sub-menu hover">
                                                             <p class="close-menu"></p>
-                                                            <a href="#" class="clearfix menu1">
+                                                            <a href="{{route('category')}}" class="clearfix menu1">
                                                                 <strong>Categories</strong>
                                                                 <span class="label"></span>
 
@@ -392,14 +394,14 @@
 
                                                         <li class="">
                                                             <p class="close-menu"></p>
-                                                            <a href="{{asset('user/about-us.html')}}" class="clearfix menu1">
+                                                            <a href="{{route('about-us')}}" class="clearfix menu1">
                                                                 <strong>About</strong>
                                                                 <span class="label"></span>
                                                             </a>
                                                         </li>
                                                         <li class="">
                                                             <p class="close-menu"></p>
-                                                            <a href="{{asset('user/contact.html')}}" class="clearfix menu1">
+                                                            <a href="{{route('contact')}}" class="clearfix menu1">
                                                                 <strong> Contact Us</strong>
                                                                 <span class="lable"></span>
                                                             </a>
@@ -428,8 +430,8 @@
         <section class="so-spotlight1">
             <div id="so-slideshow" >
                 <div class="owl-carousel" data-loop="yes" data-margin="0" data-nav="yes" data-dots="yes" data-items_xs="1" data-items_sm="1" data-items_md="1">
-                    <div><a href="#"><img src="{{asset('user/img/demo/cms/i1.png')}}" alt="" style="width:1340px;height:500px;"></a></div>
-                    <div><a href="#"><img src="{{asset('user/img/demo/cms/i3.jpg')}}" alt="" style="width:1340px;height:500px;"></a></div>
+                    <div><a href="#"><img src="{{asset('user/img/demo/cms/i23.jpg')}}" alt="" width="100%" height="auto"></a></div>
+                    <div><a href="#"><img src="{{asset('user/img/demo/cms/i3.jpg')}}" alt="" width="100%" ></a></div>
                 </div>
 
             </div>
@@ -490,7 +492,7 @@
                                 <div class="product-item-container">
                                     <div class="left-block">
                                         <div class="product-image-container  second_img ">
-                                            <a href="{{asset('user/product.html')}}" class="product-img"><img src="{{asset('user/img/demo/cms/image3.jpg')}}" alt=""></a>
+                                            <a href="{{route('product')}}" class="product-img"><img src="{{asset('user/img/demo/cms/image3.jpg')}}" alt=""></a>
 
                                             <!--Sale Label-->
                                             <span class="sale">-11%</span>
@@ -508,7 +510,7 @@
                                             <p class="time-hour">11  :  25  :  53</p>
                                         </div>
                                         <div class="caption">
-                                            <h4><a href="{{asset('user/product.html')}}">Product #01</a></h4>
+                                            <h4><a href="{{route('product')}}">Product #01</a></h4>
                                             <div class="ratings">
                                                 <div class="rating-box">
                                                     <span class=""><i class="fa fa-star "></i></span>
@@ -535,7 +537,7 @@
                                 <div class="product-item-container">
                                     <div class="left-block">
                                         <div class="product-image-container  second_img ">
-                                            <a href="{{asset('user/product.html')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i4.png')}}" alt=""></a>
+                                            <a href="{{route('product')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i4.png')}}" alt=""></a>
                                             <!--Sale Label-->
                                             <span class="sale">-11%</span>
                                         </div>
@@ -552,7 +554,7 @@
                                             <p class="time-hour">11  :  25  :  53</p>
                                         </div>
                                         <div class="caption">
-                                            <h4><a href="{{asset('user/product.html')}}">Product #02</a></h4>
+                                            <h4><a href="{{route('product')}}">Product #02</a></h4>
                                             <div class="ratings">
                                                 <div class="rating-box">
                                                     <span class=""><i class="fa fa-star "></i></span>
@@ -577,8 +579,6 @@
                             </div>
                         </div>
 
-
-                                </div>
                 </aside>
                 <div id="content" class="col-md-9 col-sm-8  col-xs-12">
                     <div class="digital">
@@ -594,7 +594,7 @@
                                             <div class="product-item-container">
                                                 <div class="left-block">
                                                     <div class="product-image-container  second_img ">
-                                                        <a href="{{asset('user/product.html')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i11.jpg')}}" alt=""></a>
+                                                        <a href="{{route('product')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i11.jpg')}}" alt=""></a>
                                                         <!--Sale Label-->
                                                         <span class="new">New</span>
 
@@ -608,7 +608,7 @@
                                                 </div>
                                                 <div class="right-block">
                                                     <div class="caption">
-                                                        <h4><a href="{{asset('user/product.html')}}">Product #01</a></h4>
+                                                        <h4><a href="{{route('product')}}">Product #01</a></h4>
                                                         <div class="ratings">
                                                             <div class="rating-box">
                                                                 <span class=""><i class="fa fa-star "></i></span>
@@ -638,7 +638,7 @@
                                             <div class="product-item-container">
                                                 <div class="left-block">
                                                     <div class="product-image-container  second_img ">
-                                                        <a href="{{asset('user/product.html')}}" class="product-img"><img src="{{asset('user/img/demo/cms/image2.jpg')}}" alt=""></a>
+                                                        <a href="{{route('product')}}" class="product-img"><img src="{{asset('user/img/demo/cms/image2.jpg')}}" alt=""></a>
                                                         <!--Sale Label-->
                                                         <span class="new">New</span>
 
@@ -652,7 +652,7 @@
                                                 </div>
                                                 <div class="right-block">
                                                     <div class="caption">
-                                                        <h4><a href="{{asset('user/product.html')}}">Product#02</a></h4>
+                                                        <h4><a href="{{route('product')}}">Product#02</a></h4>
                                                         <div class="ratings">
                                                             <div class="rating-box">
                                                                 <span class=""><i class="fa fa-star "></i></span>
@@ -682,7 +682,7 @@
                                             <div class="product-item-container">
                                                 <div class="left-block">
                                                     <div class="product-image-container  second_img ">
-                                                        <a href="{{asset('user/product.html')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i44.jpg')}}" alt="" width="120" height="120"></a>
+                                                        <a href="{{route('product')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i44.jpg')}}" alt="" width="120" height="120"></a>
                                                         <!--Sale Label-->
                                                         <span class="new">New</span>
 
@@ -696,7 +696,7 @@
                                                 </div>
                                                 <div class="right-block">
                                                     <div class="caption">
-                                                        <h4><a href="{{asset('user/product.html')}}">Product #03</a></h4>
+                                                        <h4><a href="{{route('product')}}">Product #03</a></h4>
                                                         <div class="ratings">
                                                             <div class="rating-box">
                                                                 <span class=""><i class="fa fa-star "></i></span>
@@ -726,7 +726,7 @@
                                             <div class="product-item-container">
                                                 <div class="left-block">
                                                     <div class="product-image-container  second_img ">
-                                                        <a href="{{asset('user/product.html')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i5.png')}}" alt="" width="120" height="120"></a>
+                                                        <a href="{{route('product')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i5.png')}}" alt="" width="120" height="120"></a>
                                                         <!--Sale Label-->
 
                                                         <div class="hover">
@@ -739,7 +739,7 @@
                                                 </div>
                                                 <div class="right-block">
                                                     <div class="caption">
-                                                        <h4><a href="{{asset('user/product.html')}}">Product #04</a></h4>
+                                                        <h4><a href="{{route('product')}}">Product #04</a></h4>
                                                         <div class="ratings">
                                                             <div class="rating-box">
                                                                 <span class=""><i class="fa fa-star "></i></span>
@@ -768,7 +768,7 @@
                                             <div class="product-item-container">
                                                 <div class="left-block">
                                                     <div class="product-image-container  second_img ">
-                                                        <a href="{{asset('user/product.html')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i6.png')}}" alt="" width="120" height="120"></a>
+                                                        <a href="{{route('product')}}" class="product-img"><img src="{{asset('user/img/demo/cms/i6.png')}}" alt="" width="120" height="120"></a>
                                                         <!--Sale Label-->
 
                                                         <div class="hover">
@@ -781,7 +781,7 @@
                                                 </div>
                                                 <div class="right-block">
                                                     <div class="caption">
-                                                        <h4><a href="{{asset('user/product.html')}}">Product #06</a></h4>
+                                                        <h4><a href="{{route('product')}}">Product #06</a></h4>
                                                         <div class="ratings">
                                                             <div class="rating-box">
                                                                 <span class=""><i class="fa fa-star "></i></span>
@@ -816,7 +816,6 @@
                 </div>
 
 
-
             </div>
         </div>
     </div>
@@ -829,24 +828,80 @@
     </script>
 
     <!-- Footer Container -->
-    <footer class="footer-container type_footer2">
-
+    <footer class="footer-container type_footer1">
 
         <!-- Footer Top Container -->
+        <section class="footer-top">
+            <div class="container content">
+                <div class="">
+                    <div class=" collapsed-block ">
+                        <div class="module clearfix">
+                            <h3 class="modtitle">Contact Us	</h3>
+                            <div class="modcontent">
+                                <ul class="contact-address">
 
+                                    <li><span class="fa fa-envelope-o"></span><span>Email : </span> <a href="#"> hussain.qaisrani27@gmail.com</a></li>
+                                    <li><p><span class="fa fa-phone"> </span><span>Phone :</span> 03340167330 </p> </li>
+                                    <li><p><span class="fa fa-phone"> </span><span>Phone :</span> 03099184977</p> </li>
+                                </ul>
+                            </div>
+                            <div class="share-icon">
+                                <ul>
+                                    <li class="facebook"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+
+                                    <li class="google"><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li class="instagram"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" box-information">
+                        <div class="module clearfix">
+                            <h3 class="modtitle">Information</h3>
+                            <div class="modcontent">
+                                <ul class="menu">
+                                    <li><a href="{{route('about-us')}}">About Us</a></li>
+                                    <li><a href="{{route('faq')}}">FAQ</a></li>
+                                    <li><a href="{{route('order-history')}}">Order history</a></li>
+                                    <li><a href="{{route('order-information')}}">Order information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" box-extras">
+                        <div class="module clearfix">
+                            <h3 class="modtitle">Extras</h3>
+                            <div class="modcontent">
+                                <ul class="menu">
+                                    <li><a href="{{route('contact')}}">Contact Us</a></li>
+
+                                    <li><a href="{{route('my-account')}}">My Account</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div></section>
+        <!-- /Footer Top Container -->
         <div class="footer-mid">
-            <div class="container">
-                <div class="row">
-                    <div class=" help">
+            <div class=" help">
+                <div class=" container">
+                    <div class=" row">
                         <div class="footer-mid-left col-sm-6 col-xs-12">
                             <h3>NEED HELP? </h3>
-                            <p>Call us anytime at (+92) 334-0167330</p>
+                            <p>Call us anytime at AT (+92) 334-0167330</p>
                         </div>
                         <div class="footer-mid-right col-sm-6 col-xs-12">
                             <div class="btn-sub">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Your email address ..." name="search">
-                                <button type="submit" class="button-search btn btn-primary" name="submit_search">Subscribe</button>
+                                <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Your Email Address..." name="subscribe">
+                                <button type="submit" class="button-search btn btn-primary" name="submit_subscribe">Subscribe</button>
                             </div>
 
                         </div>
@@ -854,96 +909,34 @@
                 </div>
             </div>
         </div>
-
-        <!-- Footer Mid -->
-        <section class="footer-top">
-            <div class="container content">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                        <div class=" collapsed-block ">
-                            <div class="module clearfix">
-                                <h3 class="modtitle">Contact Us	</h3>
-                                <div class="modcontent">
-                                    <ul class="contact-address">
-
-                                        <li><span class="fa fa-envelope-o"></span><span>Email : </span> <a href="#"> hussain.qaisrani27@gmail.com</a></li>
-                                        <li><p><span class="fa fa-phone"> </span><span>Phone :</span> 03340167330 </p> </li>
-                                        <li><p><span class="fa fa-phone"> </span><span>Phone :</span> 03099184977</p> </li>
-                                    </ul>
-                                </div>
-                                <div class="share-icon">
-                                    <ul>
-                                        <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
-                                        <li class="google"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li class="instagram"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-information">
-                            <div class="module clearfix">
-                                <h3 class="modtitle">Information</h3>
-                                <div class="modcontent">
-                                    <ul class="menu">
-                                        <li><a href="{{asset('user/about-us.html')}}">About Us</a></li>
-                                        <li><a href="{{asset('user/faq.html')}}">FAQ</a></li>
-                                        <li><a href="{{asset('user/order-history.html')}}">Order history</a></li>
-                                        <li><a href="{{asset('user/order-information.html')}}">Order information</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class=" box-extras">
-                            <div class="module clearfix">
-                                <h3 class="modtitle">Extras</h3>
-                                <div class="modcontent">
-                                    <ul class="menu">
-                                        <li><a href="{{asset('user/contact.html')}}">Contact Us</a></li>
-
-                                        <li><a href="{{asset('user/my-account.html')}}">My Account</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+    </footer>
+    <!-- /Footer Top Container -->
 
 
+    <div class="footer-bottom-block ">
+        <div class=" container">
+            <div class="row">
+                <div class="footer-bottom-header">
+
+                    <div class="col-xs-12 col-sm-7 pay">
+                        <ul>
+
+                            <li><img src="{{asset('user/')}}img/demo/payment/jazz.png')}}'" alt=""></li>
+                            <li><img src="{{asset('user/')}}img/demo/payment/easy2.png')}}'" alt=""></li>
+                            <!--	<li><img src="img/demo/payment/paypal.jpg" alt=""></li>
+                                <li><img src="img/demo/payment/union.jpg" alt=""></li>
+                                <li><img src="img/demo/payment/cirrus.jpg" alt=""></li>
+                                <li><img src="img/demo/payment/ebay.jpg" alt=""></li>  -->
+                        </ul>
                     </div>
-
-
-
-
                 </div>
-            </div>
-        </section>
-        <!-- /Footer Top Container -->
-
-
-        <div class="footer-bottom-block ">
-            <div class=" container">
-                <div class="row">
-                    <div class="footer-bottom-header">
-
-                        <div class="col-xs-12 col-sm-7 pay">
-                            <ul>
-                                <li><img src="{{asset('user/img/demo/payment/jazz.png')}}" alt=""></li>
-                                <li><img src="{{asset('user/img/demo/payment/easy2.png')}}" alt=""></li>
-
-                                <!--	<li><img src="img/demo/payment/paypal.jpg" alt=""></li>
-                                    <li><img src="img/demo/payment/union.jpg" alt=""></li>
-                                    <li><img src="img/demo/payment/cirrus.jpg" alt=""></li>
-                                    <li><img src="img/demo/payment/ebay.jpg" alt=""></li>  -->
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="text-footer-bot">
-                        <p>COPYRIGHTS ©2019 PEZAR KHANA. ALL RIGHTS RESERVED. </p>
-                    </div>
-                    <div class="back-to-top"><i class="fa fa-angle-up"></i><span> Top </span></div>
+                <div class="text-footer-bot">
+                    <p>COPYRIGHTS ©2019 PEZAR KHANA. ALL RIGHTS RESERVED. </p>
                 </div>
+                <div class="back-to-top"><i class="fa fa-angle-up"></i><span> Top </span></div>
             </div>
         </div>
+    </div>
     </footer>
 
 </div>
@@ -971,10 +964,10 @@
 	============================================ -->
 <script type="text/javascript" src="{{asset('user/js/themejs/application.js')}}"></script>
 <script type="text/javascript" src="{{asset('user/js/themejs/homepage.js')}}"></script>
-<!-- <script type="text/javascript" src="js/themejs/toppanel.js"></script> -->
+<!-- <script type="text/javascript" src="js/themejs/toppanel.js')}}'"></script> -->
 <script type="text/javascript" src="{{asset('user/js/themejs/so_megamenu.js')}}"></script>
 <script type="text/javascript" src="{{asset('user/js/themejs/addtocart.js')}}"></script>
-<!-- <script type="text/javascript" src="js/themejs/pathLoader.js"></script>	 -->
+<!-- <script type="text/javascript" src="js/themejs/pathLoader.js')}}'"></script>	 -->
 
 
 

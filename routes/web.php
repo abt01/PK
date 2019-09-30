@@ -12,5 +12,61 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('user/welcome');
+})->name('/');
+
+Route::get('login', function () {
+    return view('user/login');
+})->name('login');
+
+Route::get('register', function () {
+    return view('user/register');
+})->name('register');
+
+Route::get('about-us', function () {
+    return view('user/about-us');
+})->name('about-us');
+
+Route::get('cart', function () {
+    return view('user/cart');
+})->name('cart');
+
+Route::get('home2', function () {
+    return view('user/home2');
+})->name('home2');
+
+Route::get('category', function () {
+    return view('user/category');
+})->name('category');
+
+Route::get('checkout', function () {
+    return view('user/checkout');
+})->name('checkout');
+
+Route::get('contact', function () {
+    return view('user/contact');
+})->name('contact');
+
+Route::get('faq', function () {
+    return view('user/faq');
+})->name('faq');
+
+Route::get('my-account', function () {
+    return view('user/my-account');
+})->name('my-account');
+
+Route::get('order-history', function () {
+    return view('user/order-history');
+})->name('order-history');
+
+Route::get('order-information', function () {
+    return view('user/order-information');
+})->name('order-information');
+
+Route::get('product', function () {
+    return view('user/product');
+})->name('product');
+
+Route::get('wishlist', function () {
+    return view('user/wishlist');
+})->name('wishlist');
