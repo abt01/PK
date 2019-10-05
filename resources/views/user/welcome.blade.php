@@ -428,8 +428,8 @@
         <section class="so-spotlight1">
             <div id="so-slideshow" >
                 <div class="owl-carousel" data-loop="yes" data-margin="0" data-nav="yes" data-dots="yes" data-items_xs="1" data-items_sm="1" data-items_md="1">
-                    <div><a href="#"><img src="{{asset('user/img/demo/cms/i1.png')}}" alt="" style="width:1340px;height:500px;"></a></div>
-                    <div><a href="#"><img src="{{asset('user/img/demo/cms/i3.jpg')}}" alt="" style="width:1340px;height:500px;"></a></div>
+                    <div><a href="#"><img src="{{asset('user/img/demo/cms/i23.jpg')}}" alt="" width="100%" height="auto"></a></div>
+                    <div><a href="#"><img src="{{asset('user/img/demo/cms/i3.jpg')}}" alt="" width="100%" ></a></div>
                 </div>
 
             </div>

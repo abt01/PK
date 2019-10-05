@@ -215,7 +215,7 @@
 
                                                     <li class="with-sub-menu hover">
                                                         <p class="close-menu"></p>
-                                                        <a href="category.html" class="clearfix menu1">
+                                                        <a href="{{route('category')}}" class="clearfix menu1">
                                                             <strong>Categories</strong>
                                                             <span class="label"></span>
 
@@ -337,7 +337,7 @@
     <!-- Main Container  -->
     <div class="main-container container">
         <ul class="header-main ">
-            <li class="home"><a href="#">Home   </a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+            <li class="home"><a href="{{route('home2')}}">Home   </a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
             <li class="home"><a href="#">Account   </a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
             <li>  Login</li>
         </ul>
@@ -354,7 +354,7 @@
                                     <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
                                 </div>
                                 <div class="bottom-form">
-                                    <a href="#" class="btn btn-default pull-right">Continue</a>
+                                    <a href="{{route('home2')}}" class="btn btn-default pull-right">Continue</a>
                                 </div>
                             </div>
 

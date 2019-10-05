@@ -15,14 +15,7 @@ Route::get('/', function () {
     return view('user/welcome');
 })->name('/');
 
-Route::get('login', function () {
-    return view('user/login');
-})->name('login');
-
-Route::get('register', function () {
-    return view('user/register');
-})->name('register');
-
+Auth::routes();
 Route::get('about-us', function () {
     return view('user/about-us');
 })->name('about-us');
@@ -70,3 +63,7 @@ Route::get('product', function () {
 Route::get('wishlist', function () {
     return view('user/wishlist');
 })->name('wishlist');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

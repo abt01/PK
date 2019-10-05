@@ -1,3 +1,5 @@
+@extends('layouts.app')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -344,7 +346,7 @@
             <div id="content" class="col-sm-12">
                 <h2 class="title">Register Account</h2>
                 <p>If you already have an account with us, please login at the <a href="#">login page</a>.</p>
-                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
+                <form action="{{ route('register') }}" method="POST" enctype="multipart/form-data" class="form-horizontal account-register clearfix">
                     <fieldset id="account">
                         <legend>Your Personal Details</legend>
                         <div class="form-group required" style="display: none;">
@@ -686,7 +688,7 @@
                     <div class="buttons">
                         <div class="pull-right">I have read and agree to the <a href="#" class="agree"><b>Pricing Tables</b></a>
                             <input class="box-checkbox" type="checkbox" name="agree" value="1"> &nbsp;
-                            <input type="submit" value="Continue" class="btn btn-primary">
+                            <input type="submit" value="Register" class="btn btn-primary">
                         </div>
                     </div>
                 </form>
