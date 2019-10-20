@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 
-    <!-- Basic page needs
-    ============================================ -->
+    <!-- Basic page needs ============================================ -->
     <title>Peezar Khana</title>
     <meta charset="utf-8">
     <meta name="keywords" content="boostrap, responsive, html5, css3, jquery, theme, multicolor, parallax, retina, business" />

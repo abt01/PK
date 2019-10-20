@@ -167,7 +167,7 @@
 
                                             </tbody>
                                         </table>
-                                        <p class="text-right"> <a class="btn view-cart" href="{{route('cart')}}"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i>Checkout</a> </p>
+                                        <p class="text-right"> <a class="btn view-cart" href="{{route('cart')}}"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="{{route('checkout')}}"><i class="fa fa-share"></i>Checkout</a> </p>
                                     </div>
                                 </li>
                             </ul>
@@ -734,7 +734,7 @@
 
                 <div class="buttons">
                     <div class="pull-left"><a href="index.html" class="btn btn-primary">Continue Shopping</a></div>
-                    <div class="pull-right"><a href="checkout.html" class="btn btn-primary">Checkout</a></div>
+                    <div class="pull-right"><a href="{{route('checkout')}}" class="btn btn-primary">Checkout</a></div>
                 </div>
             </div>
             <!--Middle Part End -->
