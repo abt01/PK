@@ -1,21 +1,7 @@
-/*******************************************
-*	Theme Name: Market
-*	Author: Magentech
-*	Author URI: http://www.magentech.com
-*	Version: 1.0.0
-*	Description: This is html5 Sass template 
-*******************************************/
 /*******************************************************
   Style Color
 ********************************************************/
-/*===============================================
-	[SASS DIRECTORY ]
-	
-    [1] Minxin Link
-    [2] Minxin Buton
-    [3] Minxin Triangle
-   
-    ==============================================*/
+
 .no-margin {
   margin: 0 !important; }
 
@@ -286,7 +272,7 @@
 
   .lazy.lazy-loaded img {
     opacity: 1; } }
-/* Overlay pattern 
+/* Overlay pattern
 --------------------------------------- */
 body.no-bgbody {
   background-image: none; }
@@ -1194,7 +1180,7 @@ header .so-megamenu .navbar-header {
 	[1]		Header Wrapper
 	[2]		Content Wrapper
 	[3]		Footer Wrapper
-	
+
 */
 #wrapper {
   overflow-x: hidden; }
@@ -2939,8 +2925,8 @@ table.table-bordered thead > * {
 	[1]		Page Faq
 	[2]		Page About us
 	[3]		Page Contact
-	[4]		page 404 
-	
+	[4]		page 404
+
   */
 #map-canvas {
   height: 600px; }
@@ -4531,7 +4517,7 @@ ul.yt-accordion li.accordion-group h3.accordion-heading:hover .fa {
     color: #654321; }
 
 /**************************************************************
-	Style  Header 2 
+	Style  Header 2
     **************************************************************/
 .type_2#header .header-center .shopping_cart .header-text i {
   color: #654321; }
@@ -4640,7 +4626,7 @@ ul.yt-accordion li.accordion-group h3.accordion-heading:hover .fa {
 *	Author: Magentech
 *	Author URI: http://www.magentech.com
 *	Version: 1.0.0
-*	Description: This is html5 Sass template 
+*	Description: This is html5 Sass template
 *******************************************/
 .footer-bottom-block .text-footer-bot p a {
   color: #654321; }
@@ -4659,7 +4645,7 @@ ul.yt-accordion li.accordion-group h3.accordion-heading:hover .fa {
   color: #654321; }
 
 /**************************************************************
-	Style  Footer 2 
+	Style  Footer 2
 	**************************************************************/
 .type_footer2 a:hover {
   color: #654321 !important; }

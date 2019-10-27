@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('user/welcome');
-})->name('/');
-
 Auth::routes();
 Route::get('about-us', function () {
     return view('user/about-us');
@@ -23,10 +19,6 @@ Route::get('about-us', function () {
 Route::get('cart', function () {
     return view('user/cart');
 })->name('cart');
-
-Route::get('home2', function () {
-    return view('user/home2');
-})->name('home2');
 
 Route::get('category', function () {
     return view('user/category');
@@ -64,6 +56,10 @@ Route::get('wishlist', function () {
     return view('user/wishlist');
 })->name('wishlist');
 
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', function () {
+    return view('user/home');
+})->name('/');
+Route::get('home2', function () {
+    return view('user/home');
+})->name('home2');
