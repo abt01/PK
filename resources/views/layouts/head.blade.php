@@ -28,6 +28,7 @@
     ============================================ -->
     <link rel="stylesheet" href="{{asset('user/css/bootstrap/css/bootstrap.min.css')}}">
     <link href="{{asset('css/bootstrap.min/css')}}" rel="stylesheet">
+        <link href="{{asset('user/css/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('user/js/datetimepicker/bootstrap-datetimepicker.min.css')}}" rel="stylesheet">
     <link href="{{asset('user/js/owl-carousel/assets/owl.carousel.css')}}" rel="stylesheet">
     <link href="{{asset('user/js/owl-carousel/assets/owl.theme.default.min.css')}}" rel="stylesheet">
@@ -37,7 +38,7 @@
     <!-- Theme CSS
     ============================================ -->
     <link href="{{asset('user/css/themecss/so_megamenu.css')}}" rel="stylesheet">
-    <link href="{{asset('user/css/themecss/so-categories.cs')}}s" rel="stylesheet">
+    <link href="{{asset('user/css/themecss/so-categories.css')}}" rel="stylesheet">
     <link href="{{asset('user/css/themecss/so-listing-tabs.css')}}" rel="stylesheet">
     <link href="{{asset('user/css/footer1.css')}}" rel="stylesheet">
     <link href="{{asset('user/css/header1.css')}}" rel="stylesheet">

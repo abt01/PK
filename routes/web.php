@@ -63,3 +63,12 @@ Route::get('/', function () {
 Route::get('home2', function () {
     return view('user/home');
 })->name('home2');
+
+
+// admin
+Route::get('admin/home',function () {
+    return view('admin/home');
+});
+
+Route::resource('admin/products','ProductController');
+
