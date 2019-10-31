@@ -68,7 +68,7 @@ Route::get('home2', function () {
 // admin
 Route::get('admin/home',function () {
     return view('admin/home');
-});
+})->middleware('auth');
 
 Route::resource('admin/products','ProductController');
 
