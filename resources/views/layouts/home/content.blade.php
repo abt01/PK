@@ -1,5 +1,4 @@
 <div class="row">
-    dfnsd,fsdjkfbsdkjbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffsd
     <aside class="col-md-3 col-sm-4 col-xs-12  content-aside left_column">
         <div class="special">
             <h3 class="modtitle">Sale Offers</h3>
